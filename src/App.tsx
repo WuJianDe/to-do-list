@@ -33,10 +33,10 @@ function App() {
           todos={todos}
           onToggle={handleToggle}
           onDelete={handleDelete}
-        />{" "}
+        />
         <div className="footer">
           <div>
-            <span id="taskCount">{todos.length}</span>  tasks
+            <span id="taskCount">{todos.length}</span> tasks
           </div>
           <button
             id="clearCompleted"
