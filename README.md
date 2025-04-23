@@ -2,18 +2,23 @@
 
 ![預覽圖3](docs/images/page.png)
 
-一個用 React + Vite 製作的任務管理小工具。
+一個用 React + Vite 製作的練習作品。
 
-任務管理：支援新增、切換完成、刪除任務。
-過濾功能：可依「全部」、「進行中」、「已完成」三種狀態篩選任務。
-資料永續：所有任務自動儲存於 localStorage，重新整理或關閉網頁後依然保留。
-時間戳記：每個任務都會自動記錄加入的時間。
-現代 UI：採用 SCSS 打造美觀、易用的介面，並針對互動細節進行優化。
-狀態集中管理：利用 Zustand 實現全域狀態管理，讓元件更簡潔、邏輯更清楚。
+**功能特色：**
+- 支援任務的新增、完成狀態切換與刪除，讓待辦事項管理更直覺。
+- 提供「全部」、「進行中」、「已完成」三種篩選模式，快速檢視不同狀態的任務。
+- 任務資料自動儲存於 localStorage，頁面重整或關閉後依然保留，確保資料不遺失。
+- 每個任務自動記錄建立時間，方便追蹤與回顧。
+- 採用 SCSS 打造現代化 UI，兼具美觀與易用性，並針對互動細節優化體驗。
+- 使用 Zustand 實現全域狀態管理，讓元件邏輯簡潔、維護容易。
 
-技術棧
-React 18
-TypeScript
-Zustand（含 persist middleware）
-SCSS
-Vite
+**技術棧：**
+- React 19
+- TypeScript
+- Zustand（含 persist middleware）
+- SCSS（Sass）
+- Vite
+- ESLint、TypeScript ESLint
+- PostCSS、Autoprefixer
+- gh-pages（GitHub Pages 自動部署）
+- @vitejs/plugin-react
