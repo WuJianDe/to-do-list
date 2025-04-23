@@ -1,10 +1,4 @@
-import React from "react";
-
-export interface Todo {
-  id: number;
-  text: string;
-  completed: boolean;
-}
+import { Todo } from "@/store/todo";
 
 interface TodoItemProps {
   todo: Todo;
@@ -23,14 +17,25 @@ const TodoItem: React.FC<TodoItemProps> = ({ todo, onToggle, onDelete }) => {
           onChange={() => onToggle(todo.id)}
           style={{ marginRight: 8 }}
         />
-        <span
-          style={{
-            textDecoration: todo.completed ? "line-through" : "none",
-          }}
-          className="item-text"
-        >
-          {todo.text}
-        </span>
+        <div className="item-text-box">
+          <span
+            style={{
+              textDecoration: todo.completed ? "line-through" : "none",
+            }}
+            className="item-text"
+          >
+            {todo.text}
+          </span>
+          <span
+            style={{
+              textDecoration: todo.completed ? "line-through" : "none",
+            }}
+            className="item-date"
+          >
+            {" "}
+            {todo.date}
+          </span>
+        </div>
       </div>
       <button className="item-delete" onClick={() => onDelete(todo.id)}>
         ×

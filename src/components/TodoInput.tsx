@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 interface TodoInputProps {
   onAdd: (text: string) => void;
@@ -30,10 +30,7 @@ const TodoInput: React.FC<TodoInputProps> = ({ onAdd }) => {
         onKeyDown={handleKeyDown}
         placeholder="Enter your task..."
       />
-      <button
-        className="add-box-button"
-        onClick={handleAdd}
-      >
+      <button className="add-box-button" onClick={handleAdd}>
         Add
       </button>
     </div>
